@@ -1,0 +1,71 @@
+/* ===== Reset & Base ===== */
+*{margin:0; padding:0; box-sizing:border-box; font-family:Poppins,sans-serif;}
+body{background:#f5f8ff; padding:0 80px;}
+
+/* ===== Navbar ===== */
+.navbar{display:flex; justify-content:space-between; align-items:center; padding:25px 0;}
+.nav-links{display:flex; list-style:none; gap:30px;}
+.nav-links a{text-decoration:none; color:#333; font-weight:500;}
+.btn-primary{padding:12px 22px; border:none; border-radius:8px; background:#4c6fff; color:white; font-weight:600; cursor:pointer; transition:0.2s;}
+.btn-primary:hover{background:#3a55d6; box-shadow:0px 8px 20px rgba(76,111,255,0.4);}
+
+/* ===== Hero ===== */
+.hero{display:flex; align-items:center; justify-content:space-between; margin-top:60px;}
+.hero-text{max-width:500px;}
+.hero-text h1{font-size:48px; line-height:1.2; color:#1b1b1b;}
+.hero-text p{color:#555; margin:20px 0; font-size:18px;}
+.hero-img img{width:500px; border-radius:12px;}
+
+/* ===== Features ===== */
+.features{text-align:center; margin-top:80px;}
+.features h2{font-size:36px; color:#1b1b1b;}
+.section-subtitle{color:#666; margin-top:10px; font-size:18px;}
+.feature-cards{display:flex; justify-content:center; gap:40px; margin-top:50px; flex-wrap:wrap;}
+.card{background:#fff; width:280px; padding:30px; border-radius:14px; box-shadow:0px 6px 20px rgba(0,0,0,0.08); transition:0.3s;}
+.card:hover{transform:translateY(-10px); box-shadow:0px 12px 25px rgba(0,0,0,0.12);}
+.card img{width:60px; margin-bottom:20px;}
+.card h3{font-size:22px; margin-bottom:10px; color:#222;}
+.card p{color:#555; font-size:16px; line-height:1.5;}
+
+/* ===== Pricing ===== */
+.pricing{text-align:center; margin-top:100px;}
+.pricing h2{font-size:36px; color:#1b1b1b;}
+.pricing-cards{display:flex; justify-content:center; gap:40px; margin-top:50px; flex-wrap:wrap;}
+.price-card{width:280px; background:#fff; padding:30px; border-radius:14px; box-shadow:0px 6px 20px rgba(0,0,0,0.08); transition:0.3s; position:relative;}
+.price-card ul{list-style:none; margin:15px 0; color:#444; line-height:1.6;}
+.price-card:hover{transform:translateY(-10px);}
+.price-card h1{margin:10px 0; color:#4c6fff;}
+.btn-outline{padding:12px 22px; border:2px solid #4c6fff; background:transparent; color:#4c6fff; border-radius:8px; cursor:pointer; font-weight:600;}
+.btn-outline:hover{background:#4c6fff; color:#fff;}
+.popular{border:2px solid #4c6fff;}
+.tag{position:absolute; top:-12px; right:-12px; background:#4c6fff; color:#fff; padding:6px 12px; font-size:12px; border-radius:8px;}
+
+/* ===== CTA ===== */
+.cta{margin-top:120px; background:linear-gradient(135deg,#4c6fff,#6a89ff); padding:70px 30px; border-radius:20px; color:white; text-align:center;}
+.cta h2{font-size:36px; font-weight:700;}
+.cta p{margin:15px 0 25px; font-size:18px; opacity:0.9;}
+.big-btn{padding:16px 35px; font-size:18px; border-radius:10px;}
+
+/* ===== Footer ===== */
+.footer{text-align:center; padding:50px 0; margin-top:80px; color:#555;}
+.footer h3{font-size:28px; color:#333;}
+.footer-links{margin-top:20px;}
+.footer-links a{margin:0 15px; text-decoration:none; color:#4c6fff; font-weight:500;}
+.footer-links a:hover{text-decoration:underline;}
+
+/* ===== Fade-in ===== */
+.fade-in{opacity:0; transform:translateY(30px); transition:0.8s ease-out;}
+.fade-in.show{opacity:1; transform:translateY(0);}
+.hero-text.fade-in{transition-delay:0.2s;}
+.hero-img.fade-in{transition-delay:0.5s;}
+
+/* ===== Floating ===== */
+.float{animation:float 4s ease-in-out infinite;}
+@keyframes float{0%{transform:translateY(0px);} 50%{transform:translateY(-15px);} 100%{transform:translateY(0px);}}
+
+/* ===== Responsive ===== */
+@media (max-width:900px){
+    body{padding:0 30px;}
+    .hero{flex-direction:column; text-align:center; gap:30px;}
+    .hero-img img{width:100%;}
+}
